@@ -70,10 +70,26 @@ O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quan
 
 #### 5.2 Descrição dos dados 
     [objeto]: [descrição do objeto]
+    Tabela: Menu
+    Codigo do produto - Identificador unico para controle dos itens no sistema.
+    preço - Preço unitario de um dado produto
+    nome do produto - Nome do item cadastrado para identificação por pessoas.
+<br>
+    Tabela: Pedidos
+    Quantidade - Informa no momento do pedido a quantidade associada ao item solicitado.
+    Codigo do pedido - Identificador unico para gerênciar cada pedido de forma singular.
+<br>
+    Tabela: Vendedor
+    nome - Nome do funcionario ao qual um pedido foi atribuído.
+    codigo_vendedor - Identificador unico do vendedor para ter um controle sistematico permitindo responsabilização de tarefas.
+<br>
+    Tabela: Cliente
+    cpf - Identificador unico para o cliente baseado em um documento comum e de facil acesso.
+    ddd - Código referente a localização do numero do cliente.
+    telefone - Numero de contato do cliente.
+    nome - Nome do cliente ao qual estará vinculado a solicitação.
+    Endereço - Dividido em 4 campos que são rua,bairro,cidade e complemento. Com isso é possivel ter uma melhor precisão das informações obtidas para melhor atender o cliente. 
     
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
 
 
 ### 6	MODELO LÓGICO<br>
