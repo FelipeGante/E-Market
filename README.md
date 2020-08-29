@@ -27,7 +27,7 @@ O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quan
 
 ### 4.PROTOTIPAÇÃO, PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-![Arquivo PDF do Protótipo Balsamiq do E-Market](https://github.com/FelipeGante/E-Market/blob/master/arquivos/prototipo.pdf "E-market prototipo")
+![Arquivo PDF do Protótipo Balsamiq do E-Market](https://github.com/FelipeGante/E-Market/blob/master/arquivos/prototipo.pdf?raw=true "E-market prototipo")
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
@@ -50,14 +50,7 @@ O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quan
     
     
 ### 5.MODELO CONCEITUAL<br>
-    A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
-    B) O mínimo de entidades do modelo conceitual pare este trabalho será igual a 3 e o Máximo 5.
-        * informe quais são as 3 principais entidades do sistema em densenvolvimento<br>(se houverem mais de 3 entidades, pense na importância da entidade para o sistema)       
-    C) Principais fluxos de informação/entidades do sistema (mínimo 3). <br>Dica: normalmente estes fluxos estão associados as tabelas que conterão maior quantidade de dados 
-    D) Qualidade e Clareza
-        Garantir que a semântica dos atributos seja clara no esquema (nomes coerentes com os dados).
-        Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
-        e tuplas falsas (Aplicar os conceitos de normalização abordados).   
+    Modelo feito utilizando o software "Br Modelo 3"    
         
 ![Alt text](https://github.com/FelipeGante/E-Market/blob/master/images/modelo_conceitual.png?raw=true "Modelo Conceitual")
     
@@ -92,13 +85,45 @@ O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quan
 
 
 ### 6	MODELO LÓGICO<br>
-        a) inclusão do esquema lógico do banco de dados
-        b) verificação de correspondencia com o modelo conceitual 
-        (não serão aceitos modelos que não estejam em conformidade)
+        Modelo Lógico gerado a partir do "Br Modelo 3"
+![Alt text](https://github.com/FelipeGante/E-Market/blob/master/images/modelo_logico.png?raw=true "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas em SQL/DDL 
-        (criação de tabelas, alterações, etc..) 
+        CREATE TABLE trabalho_bd.cliente (
+        cpf varchar(11) NOT NULL,
+        telefone int4 NOT NULL,
+        nome varchar(80) NOT NULL,
+        ddd int4 NOT NULL,
+        rua varchar(20) NULL,
+        bairro varchar(20) NULL,
+        cidade varchar(20) NULL,
+        complemento varchar(20) NULL,
+        CONSTRAINT cliente_pkey PRIMARY KEY (cpf)
+        );
+
+        CREATE TABLE trabalho_bd.pedidos (
+        quantidade int4 NULL,
+        codigo_pedido int4 NOT NULL,
+        CONSTRAINT codigo_pedido_pk PRIMARY KEY (codigo_pedido)
+        );
+
+        CREATE TABLE trabalho_bd.vendedor_1 (
+        nome varchar(80) NOT NULL,
+        codigo_vendedor int4 NOT NULL,
+        CONSTRAINT codigo_vendedor_pk PRIMARY KEY (codigo_vendedor)
+        );
+
+        CREATE TABLE trabalho_bd.menu (
+        nome_produto varchar(40) NULL,
+        codigo_produto int4 NOT NULL,
+        quantidade int4 NULL,
+        CONSTRAINT codigo_produto_pk PRIMARY KEY (codigo_produto)
+        );
+
+
+
+
+
         
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
