@@ -1,4 +1,4 @@
-# TRABALHO 01:  Título do Trabalho
+# TRABALHO 01:  E-Market
 Trabalho desenvolvido durante a disciplina de BD1
 
 # Sumário
@@ -10,16 +10,12 @@ segundo_componente_do_grupo:diegopacheco.ufes@gmail.com<br>
 ...<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
-Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
-<br>e motivação da escolha realizada. <br>
-
-> A empresa "Devcom Projetos" visa colaborar com desenvolvimento de projetos para uma sociedade melhor. Sabendo-se dos desafios para gerenciar projetos dentro de uma empresa e visando unir as informações relativas a funcionários, departamentos e projetos em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "Devcom" tem como objetivo gerenciar todas as informações ao desenvolvimento das atividades de projetos em diversas localidades do país. Para realizar suas operações adequadamente e empresa necessita que sistema que armazene informações relativas aos Projetos, Departamentos e Empregados, além de também armazenar dados sobre  Dependentes e Históricos de Salário dos empregados. O sistema deverá gerar um conjunto de relatórios que por sua vez atenderá os anseios da empresa em questão.
- 
+A empresa "Barabos Comporation" visa facilitar a vida de todos que neste tempo não estão tendo como sair de casa devido a pandemia do NOvo corna virus. Sabendo-se dos desafios ficamos motivados com o desenvolvimento deste sistema. O Sistema "E-Market" tem como objetivo criar uma interface entre o comprador e os mercados. levando alimentos e produtos essenciais para todos e ajudado os mercados a não fecharem as portas.  
 
 ### 3.MINI-MUNDO<br>
 
 Minimundo
-Brabo's corporation 
+E-Market
 <br>
 <br>
 Estámos produzindo um software com o objetivo de terceirizar as compras nesse periodo de quarentena, permitindo que pessoas em grau de maior de risco possam efetuar as compras sem precisar se expor diretamente.
