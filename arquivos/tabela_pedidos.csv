@@ -1,0 +1,14 @@
+,cliente,cpf,rua,bairro,cidade,complemento,ddd,celular,produto,quantidade,codigo_pedido,codigo_prod,preco_prod,vendedor
+0,felipe,28346837456,Dr Arthur,Ilha do boi,vitoria,252,27,9928374599,pizza,6,1,734,30.9,Jaraspion
+1,felipe,28346837456,Dr Arthur,Ilha do boi,vitoria,252,27,9928374599,cafe,3,2,572,4.5,Ludovino
+2,joao,19547362409,Evania,Tabuazeiro,vitoria,apt 400,27,999938469,acerola,3,3,376,5.0,Judislayne
+3,Julia,17439228345,Da luta,Peteleco,Serra,frente a praca,28,999994899,alvejante,5,4,13,2.5,Judislayne
+4,Rogerio,11174503843,Prof Adao,Centro,vitoria,bl 4 apt 200,27,999909899,cafe,3,5,572,4.5,Ramilton
+5,Maria,22138540328,horacio,Sao joao,vitoria,300,11,999992699,pizza,6,6,734,30.9,Jaraspion
+6,joao,19547362409,Evania,Tabuazeiro,vitoria,apt 400,27,999938469,bolinho de queijo,2,7,883,11.0,Ludovino
+7,diego,27384539423,Arco iris,Nova palestina,vitoria,100,27,995949699,cafe,3,8,572,4.5,Jaraspion
+8,pablo,12853820019,Nossa Senhora,Praia do sua,vitoria,35,28,991539999,bolinho de queijo,2,9,883,11.0,Ramilton
+9,pablo,12853820019,Nossa Senhora,Praia do sua,vitoria,35,28,991539999,alvejante,5,10,13,2.5,Ramilton
+10,Rogerio,11174503843,Prof Adao,Centro,vitoria,bl 4 apt 200,27,999909899,bolinho de queijo,2,11,883,11.0,Jaraspion
+11,Rogerio,11174503843,Prof Adao,Centro,vitoria,bl 4 apt 200,27,999909899,acerola,3,12,376,5.0,Ludovino
+12,felipe,28346837456,Dr Arthur,Ilha do boi,vitoria,252,27,9928374599,cafe,3,13,572,4.5,Judislayne
