@@ -5,12 +5,12 @@ Trabalho desenvolvido durante a disciplina de BD1
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-primeiro_componente_do_grupo:gante.ufes@gmail.com<br>
-segundo_componente_do_grupo:diegopacheco.ufes@gmail.com<br>
+Felipe Gante Maia de Sousa:gante.ufes@gmail.com<br>
+Diego Rodrigo Perez Pacheco:diegopacheco.ufes@gmail.com<br>
 ...<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
-A empresa "Brabo's Comporation" visa facilitar a vida de todos que neste tempo não estão tendo como sair de casa devido a pandemia do NOvo corna virus. Sabendo-se dos desafios ficamos motivados com o desenvolvimento deste sistema. O Sistema "E-Market" tem como objetivo criar uma interface entre o comprador e os mercados. levando alimentos e produtos essenciais para todos e ajudado os mercados a não fecharem as portas.  
+A empresa "Brabo's Comporation" visa facilitar a vida de todos que neste tempo não estão tendo como sair de casa devido a pandemia do Novo corona virus. Sabendo-se dos desafios ficamos motivados com o desenvolvimento deste sistema. O Sistema "E-Market" tem como objetivo criar uma interface entre o comprador e os mercados. levando alimentos e produtos essenciais para todos e ajudado os mercados a não fecharem as portas.  
 
 ### 3.MINI-MUNDO<br>
 
@@ -55,8 +55,6 @@ O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quan
 ![Alt text](https://github.com/FelipeGante/E-Market/blob/master/images/modelo_conceitual.png?raw=true "Modelo Conceitual")
     
     
-        
-    
 #### 5.1 Validação do Modelo Conceitual
     [Grupo01]: [Nomes dos que participaram na avaliação]
     [Grupo02]: [Nomes dos que participaram na avaliação]
@@ -82,7 +80,6 @@ O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quan
     nome - Nome do cliente ao qual estará vinculado a solicitação.
     Endereço - Dividido em 4 campos que são rua,bairro,cidade e complemento. Com isso é possivel ter uma melhor precisão das informações obtidas para melhor atender o cliente. 
     
-
 
 ### 6	MODELO LÓGICO<br>
         Modelo Lógico gerado a partir do "Br Modelo 3"
@@ -119,11 +116,6 @@ O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quan
         quantidade int4 NULL,
         CONSTRAINT codigo_produto_pk PRIMARY KEY (codigo_produto)
         );
-
-
-
-
-
         
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
