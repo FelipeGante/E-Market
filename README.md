@@ -21,18 +21,13 @@ E-Market
 Estámos produzindo um software com o objetivo de terceirizar as compras nesse periodo de quarentena, permitindo que pessoas em grau de maior de risco possam efetuar as compras sem precisar se expor diretamente.
 Cada cliente possui, código identificador, nome, cpf, um telefone, e-mail e endereco. 
 O cliente pode realizar uma compra através do menu de itens onde cada cliente pode fazer de nenhum a até varios pedidos independentes. Ao efetuar o pedido, o vendedor reserva os produtos do pedido. O vendedos possui codigo de identificacao e seu nome. 
-O menu é igual para todos os vendedores, O entregador é registrado por seu telefone,nome, cpf e um status de disponibilidade no momento da compra. Ao fazer o pedido são enviados a quantidade de itens e o código do pedido. Os pedidos vão ser reservados pelo vendedor, retirados do menu e atribuido para o entregador.
+O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quantidade de itens e o código do pedido. Os pedidos vão ser reservados pelo vendedor, retirados do menu e atribuido para o entregador.
 <br>
 
 
 ### 4.PROTOTIPAÇÃO, PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
-
-Sugestão: https://balsamiq.com/products/mockups/<br>
-
-![Alt text](https://github.com/discipbd1/trab01/blob/master/balsamiq.png?raw=true "Title")
-![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/discipbd1/trab01/blob/master/arquivos/EmpresaDevcom.pdf?raw=true "Empresa Devcom")
+![Arquivo PDF do Protótipo Balsamiq do E-Market](https://github.com/FelipeGante/E-Market/blob/master/arquivos/prototipo.pdf "E-market prototipo")
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
