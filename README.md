@@ -5,8 +5,8 @@ Trabalho desenvolvido durante a disciplina de BD1
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-Felipe Gante Maia de Sousa:gante.ufes@gmail.com<br>
-Diego Rodrigo Perez Pacheco:diegopacheco.ufes@gmail.com<br>
+Felipe Gante Maia de Sousa : gante.ufes@gmail.com<br>
+Diego Rodrigo Perez Pacheco : diegopacheco.ufes@gmail.com<br>
 ...<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
@@ -19,24 +19,22 @@ E-Market
 <br>
 <br>
 Estámos produzindo um software com o objetivo de terceirizar as compras nesse periodo de quarentena, permitindo que pessoas em grau de maior de risco possam efetuar as compras sem precisar se expor diretamente.
-Cada cliente possui, código identificador(cpf), nome, um telefone e endereçoo. 
-O cliente pode realizar uma compra através do menu de itens onde pode fazer de nenhum a até varios pedidos independentes. Ao efetuar o pedido, o vendedor reserva os produtos do pedido. O vendedores possui codigo de identificacao e seu nome. 
-O menu é igual para todos os vendedores, contedo o nome do produto, codigo e o preço . Ao fazer o pedido são enviados a quantidade de itens e o código do pedido.Depois envia o para o Cliente.
+Cada cliente possui, código identificador, nome, cpf, um telefone, e-mail e endereco. 
+O cliente pode realizar uma compra através do menu de itens onde cada cliente pode fazer de nenhum a até varios pedidos independentes. Ao efetuar o pedido, o vendedor reserva os produtos do pedido. O vendedos possui codigo de identificacao e seu nome. 
+O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quantidade de itens e o código do pedido. Os pedidos vão ser reservados pelo vendedor, retirados do menu e atribuido para o entregador.
 <br>
 
 
 ### 4.PROTOTIPAÇÃO, PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-![Arquivo PDF do Protótipo Balsamiq do E-Market](https://github.com/FelipeGante/E-Market/blob/master/arquivos/prototipo.pdf "E-market prototipo")
+![Arquivo PDF do Protótipo Balsamiq do E-Market](https://github.com/FelipeGante/E-Market/blob/master/arquivos/prototipo.pdf?raw=true "E-market prototipo")
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    
-O vendedor relatorio precisa inicialmente dos seguintes relatórios:
- - Relatório de produtos mais vendidos:Mostrar qual o nome e numero de vendas dos produtos. Ordenados do mais vendido para o menos vendido.
- - Relatório de frequêcia de Clientes: Mostrar nome e frenquência que do cleinte. Ordenados do mais vezes compra para o menos vezes compra.
- - Relátorio de Faturamento do mes: mostrar o valor  fatramento do mes.
- - Relatorio de média de gasto por cliente: mostrar a media de gasto por cliente.
+     O vendedor relatorio precisa inicialmente dos seguintes relatórios: 
+    - Relatório de produtos mais vendidos:Mostrar qual o nome e numero de vendas dos produtos. Ordenados do mais vendido para o menos vendido. 
+    - Relatório de frequêcia de Clientes: Mostrar nome e frenquência que do cleinte. Ordenados do mais vezes compra para o menos vezes compra. 
+    - Relátorio de Faturamento do mes: mostrar o valor  fatramento do mes. 
+    - Relatorio de média de gasto por cliente: mostrar a media de gasto por cliente. 
 
- 
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
     a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas/registros de dados.
@@ -46,33 +44,43 @@ O vendedor relatorio precisa inicialmente dos seguintes relatórios:
     
     
 ### 5.MODELO CONCEITUAL<br>
-    A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
-    B) O mínimo de entidades do modelo conceitual pare este trabalho será igual a 3 e o Máximo 5.
-        * informe quais são as 3 principais entidades do sistema em densenvolvimento<br>(se houverem mais de 3 entidades, pense na importância da entidade para o sistema)       
-    C) Principais fluxos de informação/entidades do sistema (mínimo 3). <br>Dica: normalmente estes fluxos estão associados as tabelas que conterão maior quantidade de dados 
-    D) Qualidade e Clareza
-        Garantir que a semântica dos atributos seja clara no esquema (nomes coerentes com os dados).
-        Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
-        e tuplas falsas (Aplicar os conceitos de normalização abordados).   
+    Modelo feito utilizando o software "Br Modelo 3"    
         
-![Alt text](https://github.com/discipbd1/trab01/blob/master/images/concept_sample.png?raw=true "Modelo Conceitual")
+![Alt text](https://github.com/FelipeGante/E-Market/blob/master/images/modelo_conceitual.png?raw=true "Modelo Conceitual")
     
+    
+
     
 #### 5.1 Validação do Modelo Conceitual
     [Grupo01]: [Nomes dos que participaram na avaliação]
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 Descrição dos dados 
-    [objeto]: [descrição do objeto]
+    [Tabela]: [Menu]
+    Codigo do produto - Identificador unico para controle dos itens no sistema.
+    preço - Preço unitario de um dado produto
+    nome do produto - Nome do item cadastrado para identificação por pessoas.
+
+    [Tabela]: [Pedidos]
+    Quantidade - Informa no momento do pedido a quantidade associada ao item solicitado.
+    Codigo do pedido - Identificador unico para gerênciar cada pedido de forma singular.
+
+    [Tabela]: [Vendedor]
+    nome - Nome do funcionario ao qual um pedido foi atribuído.
+    codigo_vendedor - Identificador unico do vendedor para ter um controle sistematico permitindo responsabilização de tarefas.
+
+    [Tabela]: [Cliente]
+    cpf - Identificador unico para o cliente baseado em um documento comum e de facil acesso.
+    ddd - Código referente a localização do numero do cliente.
+    telefone - Numero de contato do cliente.
+    nome - Nome do cliente ao qual estará vinculado a solicitação.
+    Endereço - Dividido em 4 campos que são rua,bairro,cidade e complemento. Com isso é possivel ter uma melhor precisão das informações obtidas para melhor atender o cliente. 
     
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+
 
 ### 6	MODELO LÓGICO<br>
-        a) inclusão do esquema lógico do banco de dados
-        b) verificação de correspondencia com o modelo conceitual 
-        (não serão aceitos modelos que não estejam em conformidade)
+        Modelo Lógico gerado a partir do "Br Modelo 3"
+![Alt text](https://github.com/FelipeGante/E-Market/blob/master/images/modelo_logico.png?raw=true "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
         CREATE TABLE trabalho_bd.cliente (
