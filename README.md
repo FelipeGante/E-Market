@@ -21,7 +21,7 @@ E-Market
 Estámos produzindo um software com o objetivo de terceirizar as compras nesse periodo de quarentena, permitindo que pessoas em grau de maior de risco possam efetuar as compras sem precisar se expor diretamente.
 Cada cliente possui, código identificador, nome, cpf, um telefone, e-mail e endereco. 
 O cliente pode realizar uma compra através do menu de itens onde cada cliente pode fazer de nenhum a até varios pedidos independentes. Ao efetuar o pedido, o vendedor reserva os produtos do pedido. O vendedos possui codigo de identificacao e seu nome. 
-O menu é igual para todos os vendedores, O entregador é registrado por seu telefone,nome, cpf e um status de disponibilidade no momento da compra. Ao fazer o pedido são enviados a quantidade de itens e o código do pedido. Os pedidos vão ser reservados pelo vendedor, retirados do menu e atribuido para o entregador.
+O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quantidade de itens e o código do pedido. Os pedidos vão ser reservados pelo vendedor, retirados do menu e atribuido para o entregador.
 <br>
 
 
