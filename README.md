@@ -69,21 +69,20 @@ O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quan
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 Descrição dos dados 
-    [objeto]: [descrição do objeto]
-    Tabela: Menu
+    [Tabela]: [Menu]
     Codigo do produto - Identificador unico para controle dos itens no sistema.
     preço - Preço unitario de um dado produto
     nome do produto - Nome do item cadastrado para identificação por pessoas.
-<br>
-    Tabela: Pedidos
+
+    [Tabela]: [Pedidos]
     Quantidade - Informa no momento do pedido a quantidade associada ao item solicitado.
     Codigo do pedido - Identificador unico para gerênciar cada pedido de forma singular.
-<br>
-    Tabela: Vendedor
+
+    [Tabela]: [Vendedor]
     nome - Nome do funcionario ao qual um pedido foi atribuído.
     codigo_vendedor - Identificador unico do vendedor para ter um controle sistematico permitindo responsabilização de tarefas.
-<br>
-    Tabela: Cliente
+
+    [Tabela]: [Cliente]
     cpf - Identificador unico para o cliente baseado em um documento comum e de facil acesso.
     ddd - Código referente a localização do numero do cliente.
     telefone - Numero de contato do cliente.
