@@ -180,9 +180,11 @@ O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quan
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-
-># Marco de Entrega 01: Do item 1 até o item 9.1<br>
-
+![Alt text](https://colab.research.google.com/drive/1kamgOybZT-nBwm08_GRMIv6PSlL4oI_n?usp=sharing "Codigo Colab")
+![Consulta clientet](https://github.com/FelipeGante/E-Market/blob/master/images/Consulta_Clientes.png?raw=true "E-market prototipo")
+![Consuto Vendedor](https://github.com/FelipeGante/E-Market/blob/master/images/Consulta_vendedor.png?raw=true "E-market prototipo")
+![Consulta menu](https://github.com/FelipeGante/E-Market/blob/master/images/Consulta_menu.png?raw=true "E-market prototipo")
+![Consulta pedido](https://github.com/FelipeGante/E-Market/blob/master/images/Consulta_pedidos.png?raw=true "E-market prototipo")
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
