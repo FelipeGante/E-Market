@@ -114,12 +114,59 @@ O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quan
         
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
-        (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
+        Inserção da tabela Cliente
 
+        INSERT INTO trabalho_bd."CLIENTE"
+        (cpf, telefone, nome, ddd, rua, bairro, cidade, complemento)
+        VALUES(27384539423,995949699,'diego',27,'Arco iris','Nova palestina','vitoria','100'),
+        (19547362409,999938469,'joao',27,'Evania','Tabuazeiro','vitoria','apt 400'),
+        (22138540328,999992699,'Maria',11,'horacio','Sao joao','vitoria','300'),
+        (93452374381,999945999,'Robson',27,'amadeu','consolacao','vitoria','354'),
+        (11174503843,999909899,'Rogerio',27,'Prof Adao','Centro','vitoria','bl 4 apt 200'),
+        (17439228345,999994899,'Julia',28,'Da luta','Peteleco','Serra','frente a praca'),
+        (12853820019,991539999,'pablo',28,'Nossa Senhora','Praia do sua','vitoria','35'),
+        (28346837456,992837459,'felipe',27,'Dr Arthur','Ilha do boi','vitoria','252');
+
+
+        Inserção da tabela MENU
+
+        INSERT INTO trabalho_bd."MENU"
+        (codigo_produto,nome_produto,preco)
+        VALUES(734,'pizza','30.9'),
+        (376,'acerola','5.0'),
+        (572,'cafe','4.5'),
+        (212,'batata','1.5'),
+        (438,'fruta pao','12.0'),
+        (883,'bolinho de queijo','11.0'),
+        (13,'alvejante','2.5'),
+        (616,'repolho','2.3');
+
+
+        Inserção da tabela VENDEDORES
+
+        INSERT INTO trabalho_bd."VENDEDOR"
+        (nome_vendedor ,codigo_vendedor )
+        VALUES('Ludovino',23),
+        ('Ramilton',65),
+        ('Judislayne',12),
+        ('Jaraspion',86);
+
+        Inserção DE PEDIDOS
+
+        INSERT INTO trabalho_bd."PEDIDOS"
+        (quantidade ,codigo_pedido,clf_cliente ,cod_menu ,cod_vendedor )
+        VALUES(6,1,'17439228345',438,12),
+        (2,2,'27384539423',883,86),
+        (3,3,'12853820019',376,65),
+        (6,4,'11174503843',734,65),
+        (5,5,'93452374381',13,65),
+        (9,6,'93452374381',616,65),
+        (3,7,'28346837456',572,65),
+        (6,8,'27384539423',438,65),
+        (5,9,'12853820019',13,23),
+        (3,10,'27384539423',376,86),
+        (6,11,'11174503843',438,12),
+        (6,12,'19547362409',438,12);
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
