@@ -114,6 +114,13 @@ O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quan
         
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
+        Drop das tabelas.
+        
+        DROP TABLE trabalho_bd."PEDIDOS";
+        DROP TABLE trabalho_bd."CLIENTE";
+        DROP TABLE trabalho_bd."MENU";
+        DROP TABLE trabalho_bd."VENDEDOR";
+
         Inserção da tabela Cliente
 
         INSERT INTO trabalho_bd."CLIENTE"
