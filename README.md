@@ -175,12 +175,12 @@ O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quan
         (6,11,'11174503843',438,12),
         (6,12,'19547362409',438,12);
 
-![Alt text](https://colab.research.google.com/drive/1kamgOybZT-nBwm08_GRMIv6PSlL4oI_n?usp=sharing "Codigo Colab")
+![colab](https://colab.research.google.com/drive/1kamgOybZT-nBwm08_GRMIv6PSlL4oI_n?usp=sharing "Codigo Colab")
         
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-![Alt text](https://colab.research.google.com/drive/1kamgOybZT-nBwm08_GRMIv6PSlL4oI_n?usp=sharing "Codigo Colab")
+!(colab](https://colab.research.google.com/drive/1kamgOybZT-nBwm08_GRMIv6PSlL4oI_n?usp=sharing "Codigo Colab")
 ![Consulta clientet](https://github.com/FelipeGante/E-Market/blob/master/images/Consulta_Clientes.png?raw=true "E-market prototipo")
 ![Consuto Vendedor](https://github.com/FelipeGante/E-Market/blob/master/images/Consulta_vendedor.png?raw=true "E-market prototipo")
 ![Consulta menu](https://github.com/FelipeGante/E-Market/blob/master/images/Consulta_menu.png?raw=true "E-market prototipo")
