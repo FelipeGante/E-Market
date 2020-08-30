@@ -81,7 +81,7 @@ O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quan
 ![Alt text](https://github.com/FelipeGante/E-Market/blob/master/images/modelo_logico.png?raw=true "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
-        CREATE TABLE trabalho_bd.cliente (
+        CREATE TABLE trabalho_bd.CLIENTE (
         cpf varchar(11) NOT NULL,
         telefone int4 NOT NULL,
         nome varchar(80) NOT NULL,
@@ -93,19 +93,19 @@ O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quan
         CONSTRAINT cliente_pkey PRIMARY KEY (cpf)
         );
 
-        CREATE TABLE trabalho_bd.pedidos (
+        CREATE TABLE trabalho_bd.PEDIDOS (
         quantidade int4 NULL,
         codigo_pedido int4 NOT NULL,
         CONSTRAINT codigo_pedido_pk PRIMARY KEY (codigo_pedido)
         );
 
-        CREATE TABLE trabalho_bd.vendedor_1 (
+        CREATE TABLE trabalho_bd.VENDEDOR (
         nome varchar(80) NOT NULL,
         codigo_vendedor int4 NOT NULL,
         CONSTRAINT codigo_vendedor_pk PRIMARY KEY (codigo_vendedor)
         );
 
-        CREATE TABLE trabalho_bd.menu (
+        CREATE TABLE trabalho_bd.MENU (
         nome_produto varchar(40) NULL,
         codigo_produto int4 NOT NULL,
         quantidade int4 NULL,
