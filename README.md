@@ -18,10 +18,8 @@ Minimundo
 E-Market
 <br>
 <br>
-Estámos produzindo um software com o objetivo de terceirizar as compras nesse periodo de quarentena, permitindo que pessoas em grau de maior de risco possam efetuar as compras sem precisar se expor diretamente.
-Cada cliente possui, código identificador, nome, cpf, um telefone, e-mail e endereco. 
-O cliente pode realizar uma compra através do menu de itens onde cada cliente pode fazer de nenhum a até varios pedidos independentes. Ao efetuar o pedido, o vendedor reserva os produtos do pedido. O vendedos possui codigo de identificacao e seu nome. 
-O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quantidade de itens e o código do pedido. Os pedidos vão ser reservados pelo vendedor, retirados do menu e atribuido para o entregador.
+<br>
+Estamos produzindo um software com o objetivo de terceirizar as compras nesse período de quarentena, permitindo que pessoas em grau de maior de risco possam efetuar as compras sem precisar se expor diretamente. Cada cliente possui, código identificador, nome, cpf, um telefone, e-mail e endereço. O cliente pode realizar uma compra através do menu de itens onde cada cliente pode fazer de nenhum a até vários pedidos independentes. Ao efetuar o pedido, o vendedor reserva os produtos do pedido. O vendedor possui código de identificação e seu nome. O menu é igual para todos os vendedores. Ao fazer o pedido são enviados a quantidade de itens e o código do pedido. Os pedidos vão ser reservados pelo vendedor, retirados do menu e atribuído para o entregador.
 <br>
 
 
