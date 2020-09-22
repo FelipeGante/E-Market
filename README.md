@@ -30,7 +30,7 @@ Estamos produzindo um software com o objetivo de terceirizar as compras nesse pe
      O vendedor relatorio precisa inicialmente dos seguintes relatórios: 
     - Relatório de produtos mais vendidos:Mostrar qual o nome e numero de vendas dos produtos. Ordenados do mais vendido para o menos vendido. 
     - Relatório de frequêcia de Clientes: Mostrar nome e frenquência que do cliente. Ordenados do mais vezes compra para o menos vezes compra. 
-    - Relátorio de Faturamento do mes: mostrar o valor  fatramento do mes. 
+    - Relátorio de Faturamento do mes: mostrar o valor  faturamento do mês. 
     - Relatorio de média de gasto por cliente: mostrar a media de gasto por cliente. 
     - Relatório de tempo de envio: mostrar o tempo médio do pedido
 
