@@ -27,11 +27,13 @@ Estamos produzindo um software com o objetivo de terceirizar as compras nesse pe
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 ![Arquivo PDF do Protótipo Balsamiq do E-Market](https://github.com/FelipeGante/E-Market/blob/master/arquivos/prototipo.pdf?raw=true "E-market prototipo")
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-     O vendedor relatorio precisa inicialmente dos seguintes relatórios: 
+    O proprietario precisa inicialmente dos seguintes relatórios:
     - Relatório de produtos mais vendidos:Mostrar qual o nome e numero de vendas dos produtos. Ordenados do mais vendido para o menos vendido. 
-    - Relatório de frequêcia de Clientes: Mostrar nome e frenquência que do cleinte. Ordenados do mais vezes compra para o menos vezes compra. 
-    - Relátorio de Faturamento do mes: mostrar o valor  fatramento do mes. 
-    - Relatorio de média de gasto por cliente: mostrar a media de gasto por cliente. 
+    - Relatório de frequêcia de Clientes: Mostrar nome e frenquência de compras dos clientes, ordenados de forma crescente em numero de compras efetuadas.
+    - Relátorio de Faturamento do mes: mostrar o valor do faturamento do mes. 
+    - Relatório de consumo total por cliente: Mostra o nome do cliente e o quanto ele ja gastou no estabelecimento.
+    - Relatorio de média de gastos por cliente: mostrar a media de gasto por cliente.
+
 
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
@@ -52,7 +54,7 @@ Estamos produzindo um software com o objetivo de terceirizar as compras nesse pe
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 Descrição dos dados 
-    [Tabela]: [Menu]
+    [Tabela]: [Produto]
     Codigo do produto - Identificador unico para controle dos itens no sistema.
     preço - Preço unitario de um dado produto
     nome do produto - Nome do item cadastrado para identificação por pessoas.
@@ -61,9 +63,9 @@ Estamos produzindo um software com o objetivo de terceirizar as compras nesse pe
     Quantidade - Informa no momento do pedido a quantidade associada ao item solicitado.
     Codigo do pedido - Identificador unico para gerênciar cada pedido de forma singular.
 
-    [Tabela]: [Vendedor]
+    [Tabela]: [Entregador]
     nome - Nome do funcionario ao qual um pedido foi atribuído.
-    codigo_vendedor - Identificador unico do vendedor para ter um controle sistematico permitindo responsabilização de tarefas.
+    codigo_entregador - Identificador unico do vendedor para ter um controle sistematico permitindo responsabilização de tarefas.
 
     [Tabela]: [Cliente]
     cpf - Identificador unico para o cliente baseado em um documento comum e de facil acesso.
@@ -79,46 +81,54 @@ Estamos produzindo um software com o objetivo de terceirizar as compras nesse pe
 ![Alt text](https://github.com/FelipeGante/E-Market/blob/master/images/modelo_logico.png?raw=true "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
-        CREATE TABLE trabalho_bd.CLIENTE (
-        cpf varchar(11) NOT NULL,
-        telefone int4 NOT NULL,
-        nome varchar(80) NOT NULL,
-        ddd int4 NOT NULL,
-        rua varchar(20) NULL,
-        bairro varchar(20) NULL,
-        cidade varchar(20) NULL,
-        complemento varchar(20) NULL,
-        CONSTRAINT cliente_pkey PRIMARY KEY (cpf)
-        );
-
-        CREATE TABLE trabalho_bd.PEDIDOS (
-        quantidade int4 NULL,
-        codigo_pedido int4 NOT NULL,
-        CONSTRAINT codigo_pedido_pk PRIMARY KEY (codigo_pedido)
-        );
-
-        CREATE TABLE trabalho_bd.VENDEDOR (
-        nome varchar(80) NOT NULL,
-        codigo_vendedor int4 NOT NULL,
-        CONSTRAINT codigo_vendedor_pk PRIMARY KEY (codigo_vendedor)
-        );
-
-        CREATE TABLE trabalho_bd.MENU (
-        nome_produto varchar(40) NULL,
-        codigo_produto int4 NOT NULL,
-        quantidade int4 NULL,
-        CONSTRAINT codigo_produto_pk PRIMARY KEY (codigo_produto)
-        );
-        
-       
-### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
         Drop das tabelas.
         
         DROP TABLE trabalho_bd."PEDIDOS";
         DROP TABLE trabalho_bd."CLIENTE";
-        DROP TABLE trabalho_bd."MENU";
-        DROP TABLE trabalho_bd."VENDEDOR";
+        DROP TABLE trabalho_bd."PRODUTO";
+        DROP TABLE trabalho_bd."ENTREGADOR";
 
+        CREATE TABLE trabalho_bd.cliente (
+        cpf varchar(11) NOT NULL,
+        telefone int4 NOT NULL,
+        nome varchar(80) NOT NULL,
+        ddd int4 NOT NULL,
+        logradouro varchar(20) NULL,
+        bairro varchar(20) NULL,
+        cidade varchar(20) NULL,
+        complemento varchar(20) NULL,
+        tipo_logradouro varchar(10) NULL,
+        cep int4 NULL,
+        numero int4 NULL,
+        CONSTRAINT cliente_pkey_1 PRIMARY KEY (cpf)
+        );
+
+        CREATE TABLE trabalho_bd.entregador (
+        nome_entregador varchar(80) NOT NULL,
+        codigo_entregador int4 NOT NULL,
+        CONSTRAINT codigo_vendedor_pk_1 PRIMARY KEY (codigo_entregador)
+        );
+
+        CREATE TABLE trabalho_bd.pedidos (
+        quantidade int4 NULL,
+        codigo_pedido int4 NOT NULL,
+        cpf_cliente varchar(11) NOT NULL,
+        codigo_menu int4 NOT NULL,
+        codigo_entregador int4 NOT NULL,
+        momento_entrega timestamp NULL,
+        data_pedido timestamp NULL,
+        CONSTRAINT codigo_pedido_pk_1 PRIMARY KEY (codigo_pedido)
+        );
+
+        CREATE TABLE trabalho_bd.produto (
+        nome_produto varchar(40) NULL,
+        menu int4 NOT NULL,
+        preco float8 NULL,
+        CONSTRAINT codigo_produto_pk_1 PRIMARY KEY (menu)
+        );
+        
+       
+### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
         Inserção da tabela Cliente
 
         INSERT INTO trabalho_bd."CLIENTE"
