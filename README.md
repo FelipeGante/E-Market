@@ -229,13 +229,7 @@ Estamos produzindo um software com o objetivo de terceirizar as compras nesse pe
     
 
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
-
-
-># Marco de Entrega 03: Itens 10 e 11<br>
-<br>
-<br>
-<br> 
-
+https://youtu.be/0n5wq25g3_w
 
 
 ### 12 FORMATACAO NO GIT:<br> 
